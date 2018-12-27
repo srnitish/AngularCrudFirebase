@@ -1,0 +1,9 @@
+.fa{
+    cursor: pointer;
+}
+.alert-warning{
+    color: #ffffff!important;
+}
+.table-responsive {
+    display: inline-table!important;
+}

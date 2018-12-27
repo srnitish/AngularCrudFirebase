@@ -38,4 +38,6 @@ export class CustomerListComponent implements OnInit {
   filterCondition(customer:any){
     return customer.fullName.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1;
   }
+
+  
 }
