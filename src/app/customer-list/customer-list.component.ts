@@ -31,7 +31,7 @@ export class CustomerListComponent implements OnInit {
     if (confirm("Are you sure you want to delete?")){
       this.customerService.deleteCustomer($key);
       this.showDeletedMessage = true;
-      setTimeout(() => this.showDeletedMessage = false, 3000);
+      setTimeout(() => this.showDeletedMessage = false, 10000);
     }
   }
 
