@@ -1,0 +1,11 @@
+span > i {
+    color: white;
+}
+span > input {
+    background: none;
+    color: white;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border: transparent;
+}

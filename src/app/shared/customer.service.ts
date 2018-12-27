@@ -22,7 +22,7 @@ export class CustomerService {
     //Default value will be null.
     $key: new FormControl(null),
     fullName: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.email),
+    email: new FormControl('', [Validators.email, Validators.required]),
     mobile: new FormControl('', [Validators.required, Validators.minLength(8)]),
     location: new FormControl('', Validators.required)
   });

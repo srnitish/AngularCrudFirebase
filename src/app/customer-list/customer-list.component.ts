@@ -11,7 +11,7 @@ export class CustomerListComponent implements OnInit {
 
   customerArray = [];
   showDeletedMessage: boolean;
-  searchText: string = " ";
+  searchText: string = "";
 
   constructor(private customerService: CustomerService) { }
 
