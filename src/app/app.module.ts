@@ -8,12 +8,14 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerService } from './shared/customer.service';
 import { environment } from '../environments/environment';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
