@@ -36,7 +36,7 @@
        <div class="form-group">
           <!-- <i class="fa fa-times"></i><input type="submit" class="btn btn btn-dark" value="Submit"/> -->
           <span class="btn btn btn-dark">
-              <i class="fa fa-angle-double-right" aria-hidden="true"></i>  &nbsp;<input type="submit" value="Submit"/>
+              <i class="fa fa-spinner fa-pulse fa-1x fa-fw" *ngIf="this.submitted == true"></i>  &nbsp;<input type="submit" value="Submit"/>
           </span>
        </div>
     </form>
