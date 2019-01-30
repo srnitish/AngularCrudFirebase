@@ -8,9 +8,9 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 })
 
 export class CustomerService {
-
   constructor(private firebase: AngularFireDatabase) { }
   customerList: AngularFireList<any>;
+
   //declare of the variable type formGroup as from
   //Inside FormGroup Instance, we have to provide objects, containing properties of customers.
   form = new FormGroup({

@@ -1,7 +1,6 @@
 <div class="row mt-5">
   <div class="col-md-8 mt-1 mx-auto">
-
-    <form  [formGroup]="this.customerService.form" (ngSubmit)="onSubmit()">
+    <form [formGroup]="this.customerService.form" (ngSubmit)="onSubmit()">
       <!-- This is the primary key of each record in the customer. -->
       <input type="hidden" formControlName="$key"> 
        <div class="form-group form-row">
@@ -16,8 +15,6 @@
             <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors.required">This field is required with valid email.</div>
          </div>
        </div>
-
-  
 
        <div class="form-group form-row">
          <div class="col">

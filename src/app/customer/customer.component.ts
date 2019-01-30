@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../shared/customer.service';
 import { Command } from 'protractor';
+import { FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-customer',
@@ -14,6 +16,10 @@ export class CustomerComponent implements OnInit {
   // Bydefault it will be false.
   submitted: boolean;
   showSuccessMessage: boolean;
+  customerList:any;
+  customer: any;
+  email:any;
+
   
 
   formControls = this.customerService.form.controls;
@@ -23,7 +29,13 @@ export class CustomerComponent implements OnInit {
   onSubmit(){
     this.submitted = true;
     if(this.customerService.form.valid){
+
+    
       if(this.customerService.form.get("$key").value == null)
+      if (this.formControls.email.value == 'Pandit.Ji@gmail.com')
+      alert("Username/Email Id is already submitted, Kindly register with another email id.");
+     
+      else
         this.customerService.insertCustomer(this.customerService.form.value);
         else
         this.customerService.updateCustomer(this.customerService.form.value);
